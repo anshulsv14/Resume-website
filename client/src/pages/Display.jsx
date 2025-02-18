@@ -33,12 +33,12 @@ const Display = () => {
        <h1>SKILLS</h1>
        <div style={{display:"flex"}}>
          <h2>Technical skill -</h2> 
-         <h1  style={{fontWeight:"lighter"}}>{key.technicalskill}</h1>
+         <h2  style={{fontWeight:"lighter"}}>{key.technicalskill}</h2>
          </div>
 
          <div style={{display:"flex"}}>
          <h2>Soft skill -</h2> 
-         <h1  style={{fontWeight:"lighter"}}>{key.softskill}</h1>
+         <h2  style={{fontWeight:"lighter"}}>{key.softskill}</h2>
          </div>
       <h1 style={{fontWeight:"lighter"}} ></h1>
       <hr  style={{marginTop:"15px",marginBottom:"15px"}} />
@@ -51,9 +51,9 @@ const Display = () => {
        <hr  style={{marginTop:"15px",marginBottom:"15px"}} />
        <h1 style={{marginBottom:"15px"}} >PROJECTS</h1>
      <h1  >{key.project1}</h1>
-     <h1 style={{fontWeight:"lighter",marginBottom:"25px"}} >{key.projectdes}</h1>
+     <h3 style={{fontWeight:"lighter",marginBottom:"25px"}} >{key.projectdes}</h3>
     <h1  >{key.project2}</h1>
-       <h1 style={{fontWeight:"lighter",marginBottom:"25px"}} >{key.projectdesc}</h1>
+       <h3 style={{fontWeight:"lighter",marginBottom:"25px"}} >{key.projectdesc}</h3>
       
       </>
     )

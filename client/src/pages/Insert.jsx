@@ -1,14 +1,14 @@
 
 
-
-
 import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import axios from "axios"
+import { useNavigate } from 'react-router-dom';
 
 const Insert = () => {
   const[input,setInput] = useState({})
+  const navigate = useNavigate()
 
 
   const handleInput=(e)=>{
@@ -20,23 +20,19 @@ const Insert = () => {
 
   const handleSubmit=async(e)=>{
     e.preventDefault();
-    try {
-      let api = "http://localhost:8000/customer/insertdata";
+     let api = "http://localhost:8000/customer/insertdata";
       let response = await axios.post(api, input)
       console.log(response);
       alert(response.data)
-      
-    } catch (error) {
-      console.log(error);
-      alert("error Caught")
-    }
-
+      navigate("/display")
   }
   return (
     <>
-      <h1 align="center">Insert Data</h1>
-      <Form style={{width:"400px", margin:"auto"}}>
-   
+      
+      <Form >
+        <div style={{display:"grid",gridTemplateColumns:"1fr  1fr"}}>
+        <div style={{width:"500px",marginLeft:"auto",marginRight:"auto"}}>
+      <h1 style={{color:"blue"}}>PERSONAL DETAILS</h1>
 
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Enter Name</Form.Label>
@@ -67,17 +63,24 @@ const Insert = () => {
         <Form.Label>Enter professionalsummary</Form.Label>
         <Form.Control type="text" name='professionalsummary'  onChange={handleInput} />
       </Form.Group>
-
+      </div>
+      <div style={{width:"500px",marginLeft:"auto",marginRight:"auto"}}>
+      <h1 style={{color:"blue"}}>SKILL DETAILS</h1>
+      <h3 style={{color:"blue",marginTop:"30px"}}>technical skill </h3>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Enter technicalskill</Form.Label>
         <Form.Control type="text" name='technicalskill'  onChange={handleInput} />
       </Form.Group>
-
+      <h3 style={{color:"blue",marginTop:"30px"}}>Soft skill </h3>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Enter softskill</Form.Label>
         <Form.Control type="text" name='softskill'  onChange={handleInput} />
       </Form.Group>
+      </div>
+     
 
+      <div style={{width:"500px",marginLeft:"auto",marginRight:"auto"}}>
+      <h1 style={{color:"blue"}}>EDUCATION DETAILS</h1>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Enter course</Form.Label>
         <Form.Control type="text" name='course'  onChange={handleInput} />
@@ -97,7 +100,13 @@ const Insert = () => {
         <Form.Label>Enter institute1</Form.Label>
         <Form.Control type="text" name='institute1'  onChange={handleInput} />
       </Form.Group>
+      </div>
 
+     
+
+
+      <div style={{width:"500px",marginLeft:"auto",marginRight:"auto"}}>
+<h1 style={{color:"blue"}}>PROJECTS DETAILS</h1>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Enter project1</Form.Label>
         <Form.Control type="text" name='project1'  onChange={handleInput} />
@@ -117,11 +126,11 @@ const Insert = () => {
         <Form.Label>Enter project descriptio</Form.Label>
         <Form.Control type="text" name='projectdesc'  onChange={handleInput} />
       </Form.Group>
+      </div>
+      </div>
 
-    
 
-
-      <Button variant="primary" type="submit" onClick={handleSubmit}>
+      <Button style={{textAlign:"center",marginLeft:"130px"}} variant="primary" type="submit" onClick={handleSubmit}>
         Submit
       </Button>
     </Form>
