@@ -24,13 +24,18 @@ const Home = () => {
 
 
 
-    <h1 style={{color:"blue",textAlign:"center",marginBottom:"40px",textDecoration:"underline"}}>SELECT TEMPLATE</h1>
-   <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr"}}>
+    <h1 style={{color:"blue",textAlign:"center",marginBottom:"40px",fontWeight:"bold",fontSize:"50px"}}>Make Your Resume here</h1>
+    <h1 style={{marginLeft:"40px",textDecoration:"underline red"}} >SELECT TEMPLATE</h1>
+   <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr ",marginTop:"20px"}}>
    
-    <img onClick={submit} src="/public/t1.png" alt="" height={500} />
-    <img onClick={submit} src="/public/t2.jpg" alt="" height={500} />
-    <img onClick={submit} src="/public/t3.jpg" alt="" height={500} />
-    <img onClick={submit} src="/public/t4.jpg" alt="" height={500} />
+    <img style={{border:"2px solid grey",margin:"auto"}} onClick={submit} src="/public/t1.png" alt="" height={600} width={450} />
+    <img style={{border:"2px solid grey", margin:"auto"}} onClick={submit} src="/public/t4.jpg" alt="" height={600} width={450} />
+    <img style={{border:"2px solid grey", margin:"auto"}} onClick={submit} src="/public/t2.jpg" alt="" height={600} width={450} />
+    </div>
+    <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr ",marginTop:"20px",marginBottom:"20px"}}>
+    <img style={{border:"2px solid grey", margin:"auto"}} onClick={submit} src="/public/t3.jpg" alt="" height={600} width={450} />
+    <img style={{border:"2px solid grey", margin:"auto"}} onClick={submit} src="/public/t4.jpg" alt="" height={600} width={450} />
+    <img style={{border:"2px solid grey", margin:"auto"}} onClick={submit} src="/public/t4.jpg" alt="" height={600} width={450} />
   
    </div>
    

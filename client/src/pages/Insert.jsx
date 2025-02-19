@@ -23,13 +23,13 @@ const Insert = () => {
      let api = "http://localhost:8000/customer/insertdata";
       let response = await axios.post(api, input)
       console.log(response);
-      alert(response.data)
+    
       navigate("/display")
   }
   return (
     <>
       
-      <Form >
+      <Form style={{textAlign:"center",marginTop:"30px",marginBottom:"30px"}}>
         <div style={{display:"grid",gridTemplateColumns:"1fr  1fr"}}>
         <div style={{width:"500px",marginLeft:"auto",marginRight:"auto"}}>
       <h1 style={{color:"blue"}}>PERSONAL DETAILS</h1>
@@ -130,7 +130,7 @@ const Insert = () => {
       </div>
 
 
-      <Button style={{textAlign:"center",marginLeft:"130px"}} variant="primary" type="submit" onClick={handleSubmit}>
+      <Button style={{textAlign:"center"}} variant="primary" type="submit" onClick={handleSubmit}>
         Submit
       </Button>
     </Form>
