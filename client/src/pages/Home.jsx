@@ -10,6 +10,11 @@ const Home = () => {
   }
   return (
    <>
+   <div style={{backgroundColor:"black",height:"90vh"}}>
+    <center>
+    <img src="/public/h1.png" alt="" height={400} width={400} style={{marginTop:"100px"}} />
+    </center>
+   </div>
     <Container style={{display:"grid",gridTemplateColumns:"1fr 1fr"}}>
       <div>
        <img src="/public/a1.png" alt="" height={480}/>    
@@ -37,8 +42,28 @@ const Home = () => {
     <img style={{border:"2px solid grey", margin:"auto"}} onClick={submit} src="/public/t4.jpg" alt="" height={600} width={450} />
     <img style={{border:"2px solid grey", margin:"auto"}} onClick={submit} src="/public/t4.jpg" alt="" height={600} width={450} />
   
-   </div>
+   </div  >
+
+   <div>  
+   <center> <h4 style={{color:"violet"}}>COMPANYS</h4>
+<h2 style={{marginBottom:"30px"}}>Our Top Recruiters </h2>
+  </center>
+     <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr 1fr"}}>
    
+
+    <div style={{margin:"auto"}} ><img src="/public/r1.png" alt="" /></div>
+    <div style={{margin:"auto"}}><img src="/public/r2.png" alt="" /></div>
+    <div style={{margin:"auto"}}><img src="/public/r3.png" alt="" /></div>
+    <div style={{margin:"auto"}}><img src="/public/r4.png" alt="" /></div>
+    <div style={{margin:"auto"}}><img src="/public/r5.png" alt="" /></div>
+    <div style={{margin:"auto"}}><img src="/public/r6.png" alt="" /></div>
+    <div style={{margin:"auto"}}><img src="/public/r7.png" alt="" /></div>
+    <div style={{margin:"auto"}}><img src="/public/r8.png" alt="" /></div>
+    <div style={{margin:"auto"}}><img src="/public/r9.png" alt="" /></div>
+    <div style={{margin:"auto"}}><img src="/public/r10.png" alt="" /></div>
+   </div>
+   </div>
+
    </>
   )
 }

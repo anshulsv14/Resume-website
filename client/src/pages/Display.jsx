@@ -52,7 +52,7 @@ const Display = () => {
      <h1  >{key.project1}</h1>
      <h3 style={{fontWeight:"lighter",marginBottom:"25px"}} >{key.projectdes}</h3>
     <h1  >{key.project2}</h1>
-       <h3 style={{fontWeight:"lighter",marginBottom:"25px"}} >{key.projectdesc}</h3>
+       <h3 style={{fontWeight:"lighter"}} >{key.projectdesc}</h3>
       
       </>
     )
