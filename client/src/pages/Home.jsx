@@ -51,7 +51,7 @@ const Home = () => {
      <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr 1fr"}}>
    
 
-    <div style={{margin:"auto"}} ><img src="/public/r1.png" alt="" /></div>
+    <div id='r1' style={{margin:"auto"}} ><img src="/public/r1.png" alt="" /></div>
     <div style={{margin:"auto"}}><img src="/public/r2.png" alt="" /></div>
     <div style={{margin:"auto"}}><img src="/public/r3.png" alt="" /></div>
     <div style={{margin:"auto"}}><img src="/public/r4.png" alt="" /></div>

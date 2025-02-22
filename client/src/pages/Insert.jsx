@@ -28,6 +28,7 @@ const Insert = () => {
   }
   return (
     <>
+    <h1>insert page</h1>
       
       <Form style={{textAlign:"center",marginTop:"30px",marginBottom:"30px"}}>
         <div style={{display:"grid",gridTemplateColumns:"1fr  1fr"}}>
