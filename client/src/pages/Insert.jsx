@@ -36,8 +36,8 @@ const Insert = () => {
       <h1 style={{color:"blue"}}>PERSONAL DETAILS</h1>
 
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter Name</Form.Label>
-        <Form.Control type="text" name='empname'  onChange={handleInput} />
+      <h4>  <Form.Label>Enter Name</Form.Label></h4>
+        <Form.Control id='inf' type="text" name='empname'  onChange={handleInput} />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicEmail">
