@@ -12,3 +12,65 @@
     box-shadow: none;
     border-bottom: 3px solid black;
 }
+#build1{
+    background: linear-gradient(98deg, #A053CF 64.09%, #EF59A5 99.28%);
+    height: 90vh;
+    padding-top: 50px;
+}
+#build
+{
+    height: 70vh;
+   
+    background-image: url(https://www.resumebuilder.com/wp-content/themes/resumebuilder/assets/images/2023/landing-callout-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  
+ 
+    
+   
+}
+#can
+{
+   
+    display: flex
+;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bt1
+{
+    display: inline-block;
+    padding: 15px 24px;
+    border-radius: 12px;
+    background: linear-gradient(332deg, #E92085 -15.2%, #FD7521 66.64%);
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
+    border: none;
+
+}
+#l1
+{
+    max-width: 945px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 96px;
+    text-align: center;
+    margin-bottom: 55px;
+    letter-spacing: -1.6px;
+    color: #fff;
+}
+#can3 ul
+{
+        display: flex ;
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: space-around;
+        list-style: none;
+}

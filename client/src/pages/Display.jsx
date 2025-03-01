@@ -53,6 +53,8 @@ const Display = () => {
      <h3 style={{fontWeight:"lighter",marginBottom:"25px"}} >{key.projectdes}</h3>
     <h1  >{key.project2}</h1>
        <h3 style={{fontWeight:"lighter"}} >{key.projectdesc}</h3>
+       <hr />
+       next
       
       </>
     )
@@ -69,6 +71,7 @@ const Display = () => {
     {ans}
   
    </Container>
+  
    </div>
   
    

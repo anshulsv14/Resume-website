@@ -20,6 +20,7 @@ const empSchema = new mongoose.Schema({
   projectdesc:String,
   
   
-})
+},
+{timestamps:true})
 
 module.exports = mongoose.model("CustomerData" , empSchema)
