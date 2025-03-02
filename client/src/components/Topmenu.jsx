@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const TopNav = () => {
   return (
     <>
-      <Navbar bg="primary" data-bs-theme="dark">
+      <Navbar style={{height:"80px"}} bg="dark" data-bs-theme="dark">
         <Container>
           <Navbar.Brand href="#home">My Resume</Navbar.Brand>
           <Nav className="me-auto">

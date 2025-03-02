@@ -27,7 +27,7 @@ const dataSave = async (req , res)=>{
     res.send("Details Submitted!!")
 }
 const dataDisplay = async (req,res)=>{
-    const data = await empModel.find().sort({ timestamp: +1}).limit(1);
+    const data = await empModel. findOne().sort({_id:-1});
     res.send(data)
 }
 
