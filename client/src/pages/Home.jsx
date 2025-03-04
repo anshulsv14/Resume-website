@@ -3,12 +3,13 @@ import { useNavigate } from "react-router-dom";
 
 
 const Home = () => {
+ 
   const navigate = useNavigate();
   function submit() {
     navigate("/insert");
   }
   return (
-    <>
+    <><div>
       <div id="h1" style={{ height: "80vh" }}>
         <center>
           <img
@@ -19,6 +20,9 @@ const Home = () => {
             style={{ marginTop: "30px" }}
           />
         </center>
+      </div>
+      
+   
       </div>
       <div id="build1">
         <div id="build">

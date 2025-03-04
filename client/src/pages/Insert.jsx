@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+
 import axios from "axios"
 import { useNavigate } from 'react-router-dom';
 
@@ -28,113 +28,138 @@ const Insert = () => {
   }
   return (
     <>
+       
+       
+      
     
       
-      <Form style={{textAlign:"center",marginTop:"30px",marginBottom:"30px"}}>
-        <div style={{display:"grid",gridTemplateColumns:"1fr  1fr"}}>
-        <div style={{width:"500px",marginLeft:"auto",marginRight:"auto"}}>
-      <h1 style={{color:"blue"}}>PERSONAL DETAILS</h1>
-
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-      <h4>  <Form.Label>Enter Name</Form.Label></h4>
-        <Form.Control id='inf' type="text" name='empname'  onChange={handleInput} />
-      </Form.Group>
-
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter city</Form.Label>
-        <Form.Control type="text" name='city'  onChange={handleInput} />
-      </Form.Group>
-
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter state</Form.Label>
-        <Form.Control type="text" name='state'  onChange={handleInput} />
-      </Form.Group>
-
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter country</Form.Label>
-        <Form.Control type="text" name='country'  onChange={handleInput} />
-      </Form.Group>
-
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter empno</Form.Label>
-        <Form.Control type="text" name='empno'  onChange={handleInput} />
-      </Form.Group>
-
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter professionalsummary</Form.Label>
-        <Form.Control type="text" name='professionalsummary'  onChange={handleInput} />
-      </Form.Group>
+      
+       
+      <h1 style={{color:"black",marginLeft:"200px",marginBottom:"20px"}}>PERSONAL DETAILS</h1>
+      <h3 style={{maxWidth:"500px",marginLeft:"200px",marginBottom:"20px"}}>What’s the best way for recruiters to contact you?</h3>
+      <h6 style={{maxWidth:"500px",marginLeft:"200px",marginBottom:"20px",color:"grey"}}>We suggest including an email and phone number.</h6>
+     
+      <div style={{display:"grid", gridTemplateColumns:"1fr 1fr",width:"70%",margin:"auto"}}>
+        <div>
+      <label id='label' htmlFor="">FIRST NAME</label><br />
+      <input id='inp' type="text"  name='empname'  onChange={handleInput} placeholder='  e.g Saanvi'/> <br />
       </div>
-      <div style={{width:"500px",marginLeft:"auto",marginRight:"auto"}}>
-      <h1 style={{color:"blue"}}>SKILL DETAILS</h1>
-      <h3 style={{color:"blue",marginTop:"30px"}}>technical skill </h3>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter technicalskill</Form.Label>
-        <Form.Control type="text" name='technicalskill'  onChange={handleInput} />
-      </Form.Group>
-      <h3 style={{color:"blue",marginTop:"30px"}}>Soft skill </h3>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter softskill</Form.Label>
-        <Form.Control type="text" name='softskill'  onChange={handleInput} />
-      </Form.Group>
+  
+
+      <div>
+      <label id='label' htmlFor="">CITY </label><br />
+      <input id='inp' type="text"  name='city'  onChange={handleInput} placeholder='  e.g Bhopal'/><br />
+      </div>
+
+<div>
+      <label id='label' htmlFor="">STATE </label><br />
+      <input id='inp' type="text"  name='state'  onChange={handleInput} placeholder='  e.g Delhi'/> <br />
+      </div>
+
+      <div>
+      <label id='label' htmlFor="">COUNTRY </label><br />
+      <input id='inp' type="text"  name='country'  onChange={handleInput} placeholder='  e.g Delhi'/> <br />
+      </div>
+
+      <div>      <label id='label' htmlFor="">PHONE </label><br />
+      <input id='inp' type="text"  name='empno'  onChange={handleInput} placeholder='  e.g +91 7769823576'/> <br />
+      </div>
+
+      <div>
+      <label id='label' htmlFor="">PROFESSIONAL SUMMARY </label><br />
+      <input id='inp' type="text"  name='professionalsummary'  onChange={handleInput} placeholder='  e.g +91 7769823576'/> <br />
       </div>
      
+      </div>
+      <button id='bt1' style={{marginLeft:"200px",marginTop:"30px"}}>add more</button>
+<hr />
+     
+      <h1 style={{color:"black",marginLeft:"200px",marginBottom:"20px"}}>SKILL DETAILS</h1>
+      <div style={{display:"grid", gridTemplateColumns:"1fr 1fr",width:"70%",margin:"auto"}}>
+      
+     
 
-      <div style={{width:"500px",marginLeft:"auto",marginRight:"auto"}}>
-      <h1 style={{color:"blue"}}>EDUCATION DETAILS</h1>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter course</Form.Label>
-        <Form.Control type="text" name='course'  onChange={handleInput} />
-      </Form.Group>
+      
 
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter institute</Form.Label>
-        <Form.Control type="text" name='institute'  onChange={handleInput} />
-      </Form.Group>
+      <div>
+      <label id='label' htmlFor=""> TECHNICAL SKILL </label><br />
+      <input id='inp' type="text"  name='technicalskill'  onChange={handleInput} placeholder='  e.g +91 7769823576'/> <br />
+      </div>
 
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter gradution</Form.Label>
-        <Form.Control type="text" name='gradution'  onChange={handleInput} />
-      </Form.Group>
+      
+      
+<div>      <label id='label' htmlFor=""> SOFT SKILL </label><br />
+      <input id='inp' type="text"  name='softskill'  onChange={handleInput} placeholder='  e.g +91 7769823576'/> <br />
+      </div>
 
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter institute1</Form.Label>
-        <Form.Control type="text" name='institute1'  onChange={handleInput} />
-      </Form.Group>
+      </div>
+      <button id='bt1' style={{marginLeft:"200px",marginTop:"30px"}}>add more skills</button>
+     <hr />
+
+     
+      <h1 style={{color:"black",marginLeft:"200px",marginBottom:"20px"}}>EDUCATION DETAILS</h1>
+      <div style={{display:"grid", gridTemplateColumns:"1fr 1fr",width:"70%",margin:"auto"}}>
+<div>
+      <label id='label' htmlFor=""> COURSE </label><br />
+      <input id='inp' type="text" name='course'  onChange={handleInput} placeholder='  e.g +91 7769823576'/> <br />
       </div>
 
      
+<div>
+      <label id='label' htmlFor=""> INSTITUTE </label><br />
+      <input id='inp' type="text" name='institute'  onChange={handleInput} placeholder='  e.g +91 7769823576'/> <br />
 
-
-      <div style={{width:"500px",marginLeft:"auto",marginRight:"auto"}}>
-<h1 style={{color:"blue"}}>PROJECTS DETAILS</h1>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter project1</Form.Label>
-        <Form.Control type="text" name='project1'  onChange={handleInput} />
-      </Form.Group>
-
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter project description</Form.Label>
-        <Form.Control type="text" name='projectdes'  onChange={handleInput} />
-      </Form.Group>
-
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter project2</Form.Label>
-        <Form.Control type="text" name='project2'  onChange={handleInput} />
-      </Form.Group>
-
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter project descriptio</Form.Label>
-        <Form.Control type="text" name='projectdesc'  onChange={handleInput} />
-      </Form.Group>
       </div>
+  
+<div>
+      <label id='label' htmlFor=""> GRADUATION </label><br />
+      <input id='inp' type="text" name='gradution'  onChange={handleInput} placeholder='  e.g +91 7769823576'/> <br />
       </div>
 
+    
+<div>
+      <label id='label' htmlFor=""> GRADUATION INSTITUE </label><br />
+      <input id='inp' type="text" name='institute1'  onChange={handleInput} placeholder='  e.g +91 7769823576'/> <br />
 
-      <Button style={{textAlign:"center"}} variant="primary" type="submit" onClick={handleSubmit}>
+      </div>
+
+     </div>
+<div >
+<button id='bt1' style={{marginLeft:"200px",marginTop:"30px"}}>add more details</button>
+<hr  />
+</div>  
+<h1 style={{color:"black",marginLeft:"200px",marginBottom:"20px"}}>PROJECTS DETAILS</h1>
+<div style={{display:"grid", gridTemplateColumns:"1fr 1fr",width:"70%",margin:"auto"}}>
+<div>
+      <label id='label' htmlFor=""> 1st PROJECT </label><br />
+      <input id='inp' type="text" name='project1'  onChange={handleInput} placeholder='  e.g +91 7769823576'/> <br />
+
+      </div>
+     
+<div>
+      <label id='label' htmlFor=""> PROJECT DESCRIPTION </label><br />
+      <input id='inp' type="text" name='projectdes'  onChange={handleInput} placeholder='  e.g +91 7769823576'/> <br />
+
+</div>
+      
+<div>
+      <label id='label' htmlFor=""> 2nd PROJECT  </label><br />
+      <input id='inp' type="text" name='project2'   onChange={handleInput} placeholder='  e.g +91 7769823576'/> <br />
+      </div>
+
+    <div>
+
+      <label id='label' htmlFor=""> PROJECT DESCRIPTION  </label><br />
+      <input id='inp' type="text" name='projectdesc'  onChange={handleInput} placeholder='  e.g +91 7769823576'/> <br />
+      </div>
+     
+     </div>
+     <button id='bt1' style={{marginLeft:"200px",marginTop:"30px"}}>add more projects</button>
+<hr />
+      <Button id='bt1'  style={{marginLeft:"200px",marginTop:"30px"}} type="submit" onClick={handleSubmit}>
         Submit
       </Button>
-    </Form>
+      
     </>
   )
 }

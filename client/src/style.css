@@ -191,3 +191,29 @@ height: 120px;
     height: 430px;
     width: 330px;
   }
+
+  #label
+  {
+    font-weight: bolder;
+    margin-bottom: 8px;
+  }
+  #inp
+  {
+    height: 45px;
+    width: 450px;
+    border: 1px solid grey;
+    margin-bottom: 15px;
+  }
+  #build3
+  {
+    /* background: linear-gradient(98deg, #774795b1 64.09%, #ba4e84b5 99.28%); */
+    background-color: rgba(150, 169, 176, 0.501);
+    padding-top: 30px;
+  }
+
+  
+
+
+
+
+
