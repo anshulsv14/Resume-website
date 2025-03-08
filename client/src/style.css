@@ -6,6 +6,12 @@
 {
 height: 120px;
 }
+#home
+{
+    display: flex;
+    background-color: #222;
+    height: 70vh;
+}
 #h1
 {
     background-color: #222;
@@ -207,13 +213,32 @@ height: 120px;
   #build3
   {
     /* background: linear-gradient(98deg, #774795b1 64.09%, #ba4e84b5 99.28%); */
-    background-color: rgba(150, 169, 176, 0.501);
+    background-color: rgba(109, 120, 127, 0.511);
     padding-top: 30px;
   }
 
-  
+  .image-container {
+    width: 300px;
+    height: 400px;
+}
 
+.rotate {
+    width: 100%;
+    height: 100%;
+   
+    animation: rotate3D 5s infinite linear;
+    /* transform-style: preserve-3d; */
+}
 
+@keyframes rotate3D {
+    0% {
+        transform:  rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    
+}
 
 
 

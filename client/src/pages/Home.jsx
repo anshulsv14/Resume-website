@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import FlipImage from "./Images";
 
 
 const Home = () => {
@@ -9,9 +10,10 @@ const Home = () => {
     navigate("/insert");
   }
   return (
-    <><div>
-      <div id="h1" style={{ height: "80vh" }}>
-        <center>
+    <>
+    <div id="home">
+      <div id="h1" >
+       
           <img
             src="/public/h1.png"
             alt=""
@@ -19,8 +21,11 @@ const Home = () => {
             width={400}
             style={{ marginTop: "30px" }}
           />
-        </center>
       </div>
+     <div className="image-container">
+        <img src="t4.jpg" alt="Rotating Image" className="rotate"/>
+    </div>
+     
       
    
       </div>
@@ -82,7 +87,7 @@ const Home = () => {
             </div>
      </div>
     
-   
+   <FlipImage/>
 
      
     </>

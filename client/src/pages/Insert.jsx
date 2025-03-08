@@ -31,8 +31,7 @@ const Insert = () => {
        
        
       
-    
-      
+    <div id='build3'>    
       
        
       <h1 style={{color:"black",marginLeft:"200px",marginBottom:"20px"}}>PERSONAL DETAILS</h1>
@@ -159,7 +158,8 @@ const Insert = () => {
       <Button id='bt1'  style={{marginLeft:"200px",marginTop:"30px"}} type="submit" onClick={handleSubmit}>
         Submit
       </Button>
-      
+      </div>
+  
     </>
   )
 }
