@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import FlipImage from "./Images";
+
 
 
 const Home = () => {
@@ -11,24 +11,11 @@ const Home = () => {
   }
   return (
     <>
-    <div id="home">
-      <div id="h1" >
-       
-          <img
-            src="/public/h1.png"
-            alt=""
-            height={400}
-            width={400}
-            style={{ marginTop: "30px" }}
-          />
-      </div>
-     <div className="image-container">
-        <img src="t4.jpg" alt="Rotating Image" className="rotate"/>
-    </div>
+  
      
       
    
-      </div>
+    
       <div id="build1">
         <div id="build">
           <div id="can">
@@ -87,7 +74,7 @@ const Home = () => {
             </div>
      </div>
     
-   <FlipImage/>
+
 
      
     </>
